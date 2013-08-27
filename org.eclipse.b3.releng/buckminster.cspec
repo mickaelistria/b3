@@ -9,6 +9,7 @@
         <cs:dependency name="org.eclipse.b3.beelang.tests" componentType="osgi.bundle" filter="(with.beelang=true)"/>
         <cs:dependency name="org.eclipse.b3.build.ui" componentType="osgi.bundle" filter="(with.build=true)"/>
         <cs:dependency name="org.eclipse.b3.build.ui.idefragment" componentType="osgi.bundle" filter="(with.build=true)"/>
+        <cs:dependency name="org.eclipse.platform" componentType="eclipse.feature"/>
     </cs:dependencies>
     <cs:actions>
         <cs:public name="clear.site.eclipse" actor="ant" always="true">
