@@ -2,10 +2,10 @@
 <feature
       id="org.eclipse.b3.p2.maven.indexer.feature"
       label="%featureName"
-      version="0.3.0.qualifier"
+      version="1.0.0.qualifier"
       provider-name="%providerName"
-      license-feature="org.eclipse.b3.license.feature"
-      license-feature-version="0.2.0.qualifier">
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
 
    <description>
       %description
@@ -14,10 +14,6 @@
    <copyright>
       %copyright
    </copyright>
-
-   <license url="%licenseURL">
-      %license
-   </license>
 
    <requires>
       <import plugin="org.eclipse.m2e.maven.runtime"/>

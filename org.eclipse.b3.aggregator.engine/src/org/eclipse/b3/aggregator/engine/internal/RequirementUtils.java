@@ -15,10 +15,10 @@ import java.util.Map;
 import java.util.Set;
 
 import org.eclipse.b3.aggregator.MapRule;
+import org.eclipse.b3.osgi.filter.Filter;
+import org.eclipse.b3.osgi.filter.FilterFactory;
 import org.eclipse.b3.p2.MetadataRepository;
 import org.eclipse.b3.util.Trivial;
-import org.eclipse.buckminster.osgi.filter.Filter;
-import org.eclipse.buckminster.osgi.filter.FilterFactory;
 import org.eclipse.equinox.internal.p2.metadata.IRequiredCapability;
 import org.eclipse.equinox.internal.p2.metadata.expression.ExpressionFactory;
 import org.eclipse.equinox.internal.p2.metadata.expression.LDAPFilter;

@@ -2,10 +2,9 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.eclipse.b3.aggregator.engine;singleton:=true
-Bundle-Version: 0.2.0.qualifier
+Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: org.eclipse.b3.aggregator.engine.Engine
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6,
- J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
 Export-Package: org.eclipse.b3.aggregator.engine
 Require-Bundle: org.apache.ant,
@@ -14,7 +13,7 @@ Require-Bundle: org.apache.ant,
  org.eclipse.b3.cli,
  org.eclipse.b3.util,
  org.eclipse.b3.p2,
- org.eclipse.buckminster.osgi.filter,
+ org.eclipse.b3.osgi.filter,
  org.eclipse.core.resources,
  org.eclipse.core.runtime,
  org.eclipse.emf.ecore;bundle-version="2.9.1.v20130827-0309",

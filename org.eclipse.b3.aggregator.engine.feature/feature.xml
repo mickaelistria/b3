@@ -2,10 +2,10 @@
 <feature
       id="org.eclipse.b3.aggregator.engine.feature"
       label="%featureName"
-      version="0.3.0.qualifier"
+      version="1.0.0.qualifier"
       provider-name="%providerName"
-      license-feature="org.eclipse.b3.license.feature"
-      license-feature-version="0.2.0.qualifier">
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
 
    <description>
       %description
@@ -15,13 +15,9 @@
       %copyright
    </copyright>
 
-   <license url="%licenseURL">
-      %license
-   </license>
-
    <requires>
       <import plugin="org.apache.ant"/>
-      <import plugin="org.eclipse.buckminster.osgi.filter"/>
+      <import plugin="org.eclipse.b3.osgi.filter"/>
       <import plugin="org.apache.commons.codec"/>
       <import plugin="org.apache.commons.logging"/>
       <import plugin="org.apache.httpcomponents.httpclient"/>

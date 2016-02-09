@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+  <feature
+    id="org.eclipse.b3.aggregator.editor.feature"
+    version="0.0.0">
+  <category name="org.eclipse.b3"/>
+  </feature>
+   <category-def name="org.eclipse.b3" label="b3 Aggregator">
+      <description>
+         The b3 aggregator editor.
+      </description>
+   </category-def>
+</site>

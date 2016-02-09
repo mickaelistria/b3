@@ -1,12 +1,12 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Eclipse b3 Util
+Bundle-Name: %Bundle-Name
+Bundle-Localization: plugin
 Bundle-SymbolicName: org.eclipse.b3.util
-Bundle-Version: 0.2.0.qualifier
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6,
- J2SE-1.5
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-Activator: org.eclipse.b3.util.B3Util
 Require-Bundle: org.eclipse.core.runtime
 Export-Package: org.eclipse.b3.util
 Bundle-ActivationPolicy: lazy
-Bundle-Vendor: Eclipse b3 Project
+Bundle-Vendor: %Bundle-Vendor
