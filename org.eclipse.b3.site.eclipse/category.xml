@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.eclipse.b3.aggregator.editor.feature_0.2.0.qualifier.jar" id="org.eclipse.b3.aggregator.editor.feature" version="0.2.0.qualifier">
-      <category name="org.eclipse.b3"/>
+  <feature
+    id="org.eclipse.b3.aggregator.editor.feature"
+    version="0.0.0">
+         <category name="org.eclipse.b3"/>
    </feature>
-   <category-def name="org.eclipse.b3" label="b3 Build System (Incubation)">
+   <category-def name="org.eclipse.b3" label="b3 Build System">
       <description>
          The b3 build system features
       </description>

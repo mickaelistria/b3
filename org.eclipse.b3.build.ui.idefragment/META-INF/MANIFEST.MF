@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: Idefragment
-Bundle-SymbolicName: org.eclipse.b3.build.ui.idefragment;singleton:=true
-Bundle-Version: 0.1.0.qualifier
-Bundle-Vendor: Eclipse
-Fragment-Host: org.eclipse.b3.build.ui;bundle-version="0.1.0"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6,
- J2SE-1.5

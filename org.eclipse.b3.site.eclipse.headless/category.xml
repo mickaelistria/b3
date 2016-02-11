@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.eclipse.b3.aggregator.engine.feature_0.2.0.qualifier.jar" id="org.eclipse.b3.aggregator.engine.feature" version="0.2.0.qualifier">
-      <category name="org.eclipse.b3.headless"/>
+  <feature
+    id="org.eclipse.b3.aggregator.engine.feature"
+    version="0.0.0">
+          <category name="org.eclipse.b3.headless"/>
    </feature>
-   <category-def name="org.eclipse.b3.headless" label="b3 Headless Build System (Incubation)">
+   <category-def name="org.eclipse.b3.headless" label="b3 Headless Build System">
       <description>
          The b3 build system headless features
       </description>

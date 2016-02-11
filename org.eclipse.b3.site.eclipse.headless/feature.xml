@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.eclipse.b3.site.eclipse.headless"
-      label="Eclipse b3 Headless (Incubation)"
-      version="0.3.0.qualifier"
-      provider-name="Eclipse b3 Project">
-
-   <description url="http://www.eclipse.org/b3">
-      This is the b3 Headless Update Site for Kepler
-   </description>
-
-   <url>
-      <update label="b3 for Kepler" url="http://www.eclipse.org/downloads/download.php?file=/modeling/emft/b3/headless-4.4/&amp;protocol=http&amp;format=xml"/>
-   </url>
+      label="Eclipse b3 Headless"
+      version="1.0.0.qualifier"
+      provider-name="Eclipse b3 Project"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
 
    <includes
          id="org.eclipse.b3.aggregator.engine.feature"
@@ -84,7 +78,7 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.buckminster.osgi.filter"
+         id="org.eclipse.b3.osgi.filter"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -161,6 +155,16 @@
          fragment="true"
          unpack="false"/>
 
+   <plugin
+         id="org.eclipse.core.filesystem.linux.ppc64le"
+         os="linux"
+         arch="ppc64le"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+         
    <plugin
          id="org.eclipse.core.filesystem.linux.x86"
          os="linux"
@@ -639,29 +643,25 @@
          id="org.eclipse.m2e.archetype.common"
          download-size="0"
          install-size="0"
-         version="0.0.0"
-         unpack="true"/>
+         version="0.0.0"/>
 
    <plugin
          id="org.eclipse.m2e.maven.indexer"
          download-size="0"
          install-size="0"
-         version="0.0.0"
-         unpack="true"/>
+         version="0.0.0"/>
 
    <plugin
          id="org.eclipse.m2e.maven.runtime"
          download-size="0"
          install-size="0"
-         version="0.0.0"
-         unpack="true"/>
+         version="0.0.0"/>
 
    <plugin
          id="org.eclipse.m2e.maven.runtime.slf4j.simple"
          download-size="0"
          install-size="0"
-         version="0.0.0"
-         unpack="true"/>
+         version="0.0.0"/>
 
    <plugin
          id="org.eclipse.osgi.services"

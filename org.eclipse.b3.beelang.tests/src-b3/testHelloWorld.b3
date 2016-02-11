@@ -1,5 +1,0 @@
-use java.lang.Object;
-use java.util.List;
-
-function Object main(List argv) : testHelloWorld();
-function testHelloWorld() : assertEquals("Hello World","Hello World","Hello World");

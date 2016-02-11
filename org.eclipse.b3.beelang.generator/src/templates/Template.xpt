@@ -1,8 +1,0 @@
-«IMPORT ecore»;
-
-«EXTENSION templates::Extensions»
-
-«DEFINE main FOR ecore::EObject-»
-«FILE "output.txt"-»
-«ENDFILE-»
-«ENDDEFINE»

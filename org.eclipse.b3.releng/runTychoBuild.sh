@@ -2,7 +2,8 @@
 
 export TMP_DIR=/shared/TMP
 export LOCAL_REPO=/shared/LOCALMVNREPO
-export POM_DIR=~/gitb3/b3/org.eclipse.b3.releng.parent
+#export POM_DIR=~/gitb3/b3/org.eclipse.b3.releng.parent
+export POM_DIR=~/gitb3mirror/b3/org.eclipse.b3.releng.parent
 
 if [[ $1 == -clean ]]
 then
@@ -21,9 +22,11 @@ export JAVA_CMD=${JAVA_HOME}/jre/bin/java
 export MAVEN_PATH=${MAVEN_PATH:-/shared/common/apache-maven-latest/bin}
 export PATH=$JAVA_HOME/bin:$MAVEN_PATH:$ANT_HOME/bin:$PATH
 
+cd ${POM_DIR}
+
 mvn -version
 
 java -version
-cd ${POM_DIR}
-mvn clean verify -DskipTests=true -Dmaven.repo.local=$LOCAL_REPO -Pbree-libs  2>&1 | tee ~/temp/out.txt
+
+mvn clean verify -X -e -DskipTests=true -Dmaven.repo.local=$LOCAL_REPO -Pbree-libs  2>&1 | tee ~/temp/out.txt
 

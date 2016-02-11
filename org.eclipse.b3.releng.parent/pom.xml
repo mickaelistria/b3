@@ -8,8 +8,8 @@
   <properties>
 
     <!-- For using Tycho 23.1 (currently "staged", removed staged repo below, once released) -->
-    <tycho-version>0.23.1</tycho-version>
-    <tycho-extras.version>0.23.1</tycho-extras.version>
+    <tycho-version>0.22.0</tycho-version>
+    <tycho-extras.version>0.22.0</tycho-extras.version>
     <cbi-plugins.version>1.1.3</cbi-plugins.version>
 
     <!-- using snapshot repo for Tycho 0.23.0-SNAPSHOT, such as for bug 461207 -->
@@ -222,8 +222,10 @@
     <module>../org.eclipse.b3.aggregator.editor.feature</module>
     <module>../org.eclipse.b3.aggregator.engine.feature</module>
     <module>../org.eclipse.b3.p2.maven.indexer.feature</module>
-    <module>../org.eclipse.b3.releng.repository</module>  
-    <module>../org.eclipse.b3.releng.product</module>
+    <module>../org.eclipse.b3.site.eclipse</module>  
+    <module>../org.eclipse.b3.site.eclipse.headless</module>  
+    <module>../org.eclipse.b3.product.feature</module>
+    <module>../org.eclipse.b3.product</module>
   </modules>
   <build>
     <plugins>

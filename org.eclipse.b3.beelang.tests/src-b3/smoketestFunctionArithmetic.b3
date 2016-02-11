@@ -1,8 +1,0 @@
-use java.util.List;
-use java.lang.Number;
-
-function main(List argv) : testArithmeticSmokeTest() ;
-function testArithmeticSmokeTest() :
-	assertEquals("Arithmetic expression", 2.0, 10 -(add(1,2,7) + add(1.0, 2.0, 3.0)) * 2 / 4);
-	
-function Number add(Number a, Number b, Number c) : a + b + c;

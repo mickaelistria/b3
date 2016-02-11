@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.eclipse.b3.site.eclipse"
-      label="Eclipse b3 (Incubation)"
-      version="0.3.0.qualifier"
-      provider-name="Eclipse b3 Project">
+      label="Eclipse b3"
+      version="1.0.0.qualifier"
+      provider-name="Eclipse b3 Project"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
 
-   <description url="http://www.eclipse.org/b3">
-      This is the b3 Update Site for Kepler
-   </description>
-
-   <url>
-      <update label="b3 for Kepler" url="http://www.eclipse.org/downloads/download.php?file=/modeling/emft/b3/updates-4.4/&amp;protocol=http&amp;format=xml"/>
-   </url>
 
    <includes
          id="org.eclipse.b3.aggregator.editor.feature"
@@ -64,7 +59,7 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.buckminster.osgi.filter"
+         id="org.eclipse.b3.osgi.filter"
          download-size="0"
          install-size="0"
          version="0.0.0"

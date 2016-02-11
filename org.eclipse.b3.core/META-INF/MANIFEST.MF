@@ -7,7 +7,7 @@ Bundle-Activator: org.eclipse.b3.internal.core.BuildBundle
 Require-Bundle: org.eclipse.core.runtime;visibility:=reexport,
  org.eclipse.equinox.security
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6,
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7,
  J2SE-1.5
 Export-Package: org.eclipse.b3.internal.core;x-friends:="org.eclipse.b3.singleSetup",
  org.eclipse.b3.provisional.core,

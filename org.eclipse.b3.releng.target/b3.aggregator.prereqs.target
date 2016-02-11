@@ -27,7 +27,12 @@
   <unit id="org.apache.httpcomponents.httpcore" version="4.3.3.v201411290715"/>
   <unit id="org.apache.httpcomponents.httpcore.source" version="4.3.3.v201411290715"/>
   <unit id="org.slf4j.api" version="1.7.2.v20121108-1250" />
-<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20151221205849/repository/"/>
+  <unit id="org.junit" version="0.0.0" />
+  <unit id="ch.qos.logback.classic" version="0.0.0" />
+  <unit id="ch.qos.logback.core" version="0.0.0" />
+  <unit id="ch.qos.logback.slf4j" version="0.0.0" />
+  <unit id="org.tukaani.xz" version="0.0.0" />
+  <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20151221205849/repository/"/>
 </location>
 
     <location includeAllPlatforms="true" includeMode="slicer" type="InstallableUnit">
