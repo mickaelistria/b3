@@ -1,0 +1,82 @@
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>org.eclipse.b3.product</artifactId>
+<!-- <packaging>eclipse-feature</packaging> -->
+  <packaging>eclipse-repository</packaging>
+
+	<parent>
+		<groupId>org.eclipse.b3</groupId>
+		<artifactId>org.eclipse.b3.releng.parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../org.eclipse.b3.releng.parent</relativePath>
+	</parent>
+	<build>
+		<plugins>
+      <plugin>
+    <groupId>org.eclipse.tycho</groupId>
+    <artifactId>target-platform-configuration </artifactId>
+    <version>${tycho-version}</version>
+    <configuration>
+      <dependency-resolution>
+          <extraRequirements>
+            <requirement>
+                <type>eclipse-feature</type>
+                <id>org.eclipse.equinox.executable</id>
+                <versionRange>0.0.0</versionRange>
+            </requirement>
+          </extraRequirements>
+      </dependency-resolution>
+    </configuration>
+  </plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-repository-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<includeAllDependencies>true</includeAllDependencies>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-director-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>materialize-products</id>
+						<goals>
+							<goal>materialize-products</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>archive-products</id>
+						<goals>
+							<goal>archive-products</goal>
+						</goals>
+						<configuration>
+							<formats>
+								<win32>zip</win32>
+								<macosx>tar.gz</macosx>
+								<linux>tar.gz</linux>
+							</formats>
+						</configuration>
+					</execution>
+				</executions>
+          <configuration>
+             <!-- <profile>SDKProfile</profile>  --> 
+              <products>
+                <product>
+                  <id>org.eclipse.b3.product</id>
+                  <rootFolder>b3</rootFolder>
+                  <rootFolders>
+                    <macosx>b3.app</macosx>
+                  </rootFolders>
+                </product>
+              </products>
+            </configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

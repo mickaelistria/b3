@@ -2,8 +2,8 @@
 
 export TMP_DIR=/shared/TMP
 export LOCAL_REPO=/shared/LOCALMVNREPO
-#export POM_DIR=~/gitb3/b3/org.eclipse.b3.releng.parent
-export POM_DIR=~/gitb3mirror/b3/org.eclipse.b3.releng.parent
+export POM_DIR=~/gitb3/b3/org.eclipse.b3.releng.parent
+#export POM_DIR=~/gitb3mirror/b3/org.eclipse.b3.releng.parent
 
 if [[ $1 == -clean ]]
 then

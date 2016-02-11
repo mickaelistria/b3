@@ -1,0 +1,13 @@
+This folder contains notes, probably temporary about "what I found", 
+when looking at the existing project, especally at the existing p2 repositories 
+at 
+
+ http://download.eclipse.org/modeling/emft/b3/updates-4.4/
+ 
+ and 
+ 
+  http://download.eclipse.org/modeling/emft/b3/headless-4.4/
+
+  
+The goal being any new build we create will contain the same bundles and features. 
+

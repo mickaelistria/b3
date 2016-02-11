@@ -1,0 +1,11 @@
+org.eclipse.b3.aggregator.editor.feature_0.3.0.v20140928-0617.jar
+org.eclipse.b3.aggregator.editor.source.feature_0.3.0.v20140928-0617.jar
+org.eclipse.b3.aggregator.engine.feature_0.3.0.v20140928-0617.jar
+org.eclipse.b3.aggregator.engine.source.feature_0.3.0.v20140928-0617.jar
+org.eclipse.b3.license.feature_0.2.0.v20110710-1958.jar
+org.eclipse.b3.p2.maven.indexer.feature_0.3.0.v20140811-0658.jar
+org.eclipse.b3.p2.maven.indexer.source.feature_0.3.0.v20140811-0658.jar
+
+org.eclipse.b3.aggregator.editor.feature
+org.eclipse.b3.aggregator.engine.feature
+org.eclipse.b3.p2.maven.indexer.feature
