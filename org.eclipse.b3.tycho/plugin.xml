@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.b3.aggregator.presentation.AggregatorEditorID?before=additions">
+         <command
+               commandId="org.eclipse.b3.tycho.generateCategoryAndPom"
+               style="push">
+            <visibleWhen
+                  checkEnabled="true">
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="org.eclipse.b3.tycho.generateCategoryAndPom"
+            name="Generate category.xml and pom.xml from this model">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="org.eclipse.b3.tycho.GenerateCategoryAndPomHandler"
+            commandId="org.eclipse.b3.tycho.generateCategoryAndPom">
+         <enabledWhen>
+            <and>
+               <count
+                     value="1">
+               </count>
+               <iterate>
+                  <instanceof
+                        value="org.eclipse.b3.aggregator.Aggregation">
+                  </instanceof>
+               </iterate>
+            </and>
+         </enabledWhen>
+      </handler>
+   </extension>
+
+</plugin>
